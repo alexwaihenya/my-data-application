@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "583534775951",
+    "project_id": "dataapp-1743f",
+    "storage_bucket": "dataapp-1743f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583534775951:android:485d6fcc77d49bdfde2afa",
+        "android_client_info": {
+          "package_name": "com.lexie.dataapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583534775951-4mm2a9723e1dpvli3vsu1o6i3lmnbbnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lexie.dataapp",
+            "certificate_hash": "fab5c24ae574f7af23c2c0e0d4fe1fa174c8fa27"
+          }
+        },
+        {
+          "client_id": "583534775951-1o0qoub95oqmpa8hvesqos27dijb3d7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs8zjB9tnbkHROWJF6mm9ppk1WJXl21ZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583534775951-1o0qoub95oqmpa8hvesqos27dijb3d7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
