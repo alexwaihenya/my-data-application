@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/dataFragment">
+
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.lexie.dataapp.DataFragment"
+        android:label="Data"
+        tools:layout="@layout/fragment_data" />
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.lexie.dataapp.GraphFragment"
+        android:label="Graph"
+        tools:layout="@layout/fragment_graph" />
+</navigation>

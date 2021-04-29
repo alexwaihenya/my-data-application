@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dataFragment"
+            android:title="@string/datafragment"
+            android:icon="@drawable/data"
+            />
+        <item
+            android:id="@+id/graphFragment"
+            android:title="@string/graph_fragment"
+            android:icon="@drawable/bar_chart"
+            />
+    </group>
+</menu>
