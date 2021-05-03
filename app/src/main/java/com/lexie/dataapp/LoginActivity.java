@@ -48,10 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
-
 
     private void intializeFields() {
 
@@ -59,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
         pass = findViewById(R.id.password);
         loginButton = findViewById(R.id.loginBtn);
         signUp = findViewById(R.id.textViewNeedAccount);
-
 
     }
     private void loginUser() {

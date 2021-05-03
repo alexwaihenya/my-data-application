@@ -2,6 +2,7 @@ package com.lexie.dataapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private AppBarConfiguration appBarConfiguration;
     private NavController navController;
+    private Toolbar toolbar;
+
 
 
     @Override
@@ -36,21 +39,17 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
 
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigationView);
         appBarConfiguration = new AppBarConfiguration.Builder(R.id.dataFragment,R.id.graphFragment)
                 .setDrawerLayout(drawerLayout)
                 .build();
 
-
-
         navController = Navigation.findNavController(this,R.id.fragment);
         NavigationUI.setupActionBarWithNavController(this,navController,appBarConfiguration);
         NavigationUI.setupWithNavController(navigationView,navController);
-
-
-
-
     }
 
     @Override

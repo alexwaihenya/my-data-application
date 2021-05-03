@@ -16,5 +16,6 @@
     <string name="graph_fragment">Graph Fragment</string>
     <string name="datafragment">DataFragment</string>
     <string name="logout">Logout</string>
+    <string name="profile_image">Profile Image</string>
 
 </resources>
