@@ -4,12 +4,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/dataFragment"
-            android:title="@string/datafragment"
+            android:title="@string/data"
             android:icon="@drawable/data"
             />
         <item
             android:id="@+id/graphFragment"
-            android:title="@string/graph_fragment"
+            android:title="@string/graph"
             android:icon="@drawable/bar_chart"
             />
     </group>

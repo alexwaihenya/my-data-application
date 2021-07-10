@@ -37,7 +37,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:hint="@string/fullnames"
+        android:hint="@string/full_names"
         android:textColorHint="#000"
         app:endIconMode="clear_text"
         app:boxBackgroundColor="#ffF"

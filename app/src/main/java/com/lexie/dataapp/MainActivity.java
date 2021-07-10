@@ -6,9 +6,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,15 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser currentUser;
@@ -27,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private NavController navController;
     private Toolbar toolbar;
+
 
 
 
@@ -50,6 +61,37 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this,R.id.fragment);
         NavigationUI.setupActionBarWithNavController(this,navController,appBarConfiguration);
         NavigationUI.setupWithNavController(navigationView,navController);
+
+
+
+/*
+
+        //Retrofit Builder
+
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("https://jsonplaceholder.typicode.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        // instance for interface
+
+        DataSetApi dataSetApi = retrofit.create(DataSetApi.class);
+        Call<List<DataSetModel>> data = dataSetApi.getPost();
+
+        data.enqueue(new Callback<List<DataSetModel>>() {
+            @Override
+            public void onResponse(Call<List<DataSetModel>> call, Response<List<DataSetModel>> response) {
+
+
+            }
+
+            @Override
+            public void onFailure(Call<List<DataSetModel>> call, Throwable t) {
+
+
+            }
+        });*/
+
     }
 
     @Override
